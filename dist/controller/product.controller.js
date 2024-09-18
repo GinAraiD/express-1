@@ -29,7 +29,7 @@ const getAll = (req, res) => {
         .then((products) => {
         // .then for async call
         res.status(200).send({
-            message: "OK",
+            message: "K",
             result: products,
         });
     })

@@ -4,7 +4,7 @@ import { createPool } from "mysql2";
 // Create a pool of connections
 export const connection = createPool({
   host: "127.0.0.1",
-  port: 3306,
+  port: 5555,
   user: "root",
   password: "admin",
   database: "product_db",
