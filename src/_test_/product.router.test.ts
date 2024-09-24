@@ -65,8 +65,8 @@ describe("Product Router", () => {
     expect(response.body).toEqual({ message: "Invalid ID format" });
   });
 
-  it("should insert a new product", async () => {
-    const newProduct = { id: 2, name: "New Product", price: 20 };
+  it("เปลี่ยนชื่อ รหัสนศ.", async () => {
+    const newProduct = { id: 6604101385, name: "Supakorn", price: 20 };
     const response = await request(app).post("/products").send(newProduct);
     expect(response.status).toBe(201);
     expect(response.body).toEqual({ message: "Product created successfully" });
